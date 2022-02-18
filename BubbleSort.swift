@@ -3,6 +3,7 @@ func bubbleSort(_ array: [Int]) -> [Int] {
     for i in 0..<arr.count-1 {
         for k in 1..<arr.count-i {
             if (arr[k-1] > arr[k]) {
+                // swap k & k-1
                 var temp = arr[k]
                 arr[k] = arr[k-1]
                 arr[k-1] = temp
